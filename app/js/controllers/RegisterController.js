@@ -10,11 +10,11 @@ app.controller('RegisterController',
         $scope.register = function(userData) {
             authService.register(userData,
                 function success() {
-                    notifyService.showInfo("User registered successfully");
+                    notifyService.showInfo("User registered successfully.");
                     $location.path("/");
                 },
                 function error(err) {
-                    notifyService.showError("User registration failed", err);
+                    notifyService.showError("User registration failed.", err);
                 }
             );
         };

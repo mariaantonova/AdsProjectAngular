@@ -5,11 +5,11 @@ app.controller('LoginController',
         $scope.login = function(userData) {
             authService.login(userData,
                 function success() {
-                    notifyService.showInfo("Login successful");
+                    notifyService.showInfo("Successfull loggin.");
                     $location.path("/");
                 },
                 function error(err) {
-                    notifyService.showError("Login failed", err);
+                    notifyService.showError("Login failed.", err);
                 }
             );
         };

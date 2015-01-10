@@ -14,7 +14,7 @@ app.controller('HomeController',
                   $scope.ads = data;
               },
               function error(err) {
-                  notifyService.showError("Cannot load ads", err);
+                  notifyService.showError("Cannot load ads.", err);
               }
           );
       };
