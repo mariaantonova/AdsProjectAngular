@@ -11,6 +11,5 @@ app.controller('AppController',
             notifyService.showInfo("Logout successfull.");
             $location.path('/');
         };
-      //  $scope.login()
     }
 );
